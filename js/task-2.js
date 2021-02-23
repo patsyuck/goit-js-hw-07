@@ -7,4 +7,5 @@ const nodes = ingredients.map(elem => {
 })
 
 const ingredientsNodes = document.querySelector('ul#ingredients')
-nodes.forEach(node => ingredientsNodes.appendChild(node))
+/* nodes.forEach(node => ingredientsNodes.appendChild(node)) */
+ingredientsNodes.append(...nodes)

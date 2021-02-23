@@ -17,4 +17,5 @@ const images = [
 ]
 
 const imagesNodes = document.querySelector('ul#gallery')
-images.forEach(image => imagesNodes.insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}"></li>`))
+/*images.forEach(image => imagesNodes.insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}"></li>`))*/
+imagesNodes.insertAdjacentHTML('beforeend', images.reduce((acc, item) => acc + `<li><img src="${item.url}" alt="${item.alt}"></li>`, ''))

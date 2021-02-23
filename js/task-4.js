@@ -10,5 +10,7 @@ const decrement = () => {
 }
 const incrementNode = document.querySelector('div#counter').querySelector('button[data-action="increment"]')
 const decrementNode = document.querySelector('div#counter').querySelector('button[data-action="decrement"]')
-incrementNode.addEventListener('click', function () { increment() })
-decrementNode.addEventListener('click', function () { decrement() })
+/*incrementNode.addEventListener('click', function () { increment() })
+decrementNode.addEventListener('click', function () { decrement() })*/
+incrementNode.addEventListener('click', increment)
+decrementNode.addEventListener('click', decrement)
